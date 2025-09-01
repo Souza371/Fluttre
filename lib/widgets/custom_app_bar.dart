@@ -22,7 +22,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       centerTitle: true,
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.green,
       foregroundColor: Colors.white,
       elevation: 5,
       shape: const RoundedRectangleBorder(

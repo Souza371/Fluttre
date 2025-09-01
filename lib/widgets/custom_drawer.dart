@@ -14,11 +14,11 @@ class CustomDrawer extends StatelessWidget {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.green,
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Colors.blue.shade700, Colors.blue.shade400],
+                  colors: [Colors.green.shade700, Colors.green.shade400],
                 ),
               ),
               child: const Column(
@@ -31,7 +31,7 @@ class CustomDrawer extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(
-                    'Swiss Army Knife',
+                    'Vicente Tools',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
@@ -50,7 +50,7 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
             ...toolList.map((tool) => ListTile(
-                  leading: Icon(tool.icon, color: Colors.blue),
+                  leading: Icon(tool.icon, color: Colors.green),
                   title: Text(tool.title),
                   onTap: () {
                     Navigator.pop(context);
